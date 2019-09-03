@@ -1,29 +1,20 @@
-import java.util.Scanner;
 
-class Student {
-    private double marks1, marks2, marks3;
-    private double maxMarks = 100;
-    public void setMarks1(double marks1) {
-        this.marks1 = marks1;
+import java.lang.String;
+
+// Java program for Replace every character of a
+// string by a different character
+public class StringAppend {
+    String name;
+    StringAppend(String str) { name = str;}
+
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setMarks2(double marks2) {
-        this.marks2 = marks2;
+    public String getName() {
+        return name;
     }
-
-    public void setMarks3(double marks3) {
-        this.marks3 = marks3;
-    }
-
-
-    public double getAverage() {
-        double avg = 0;
-        avg = ((marks1 + marks2 + marks3) / (maxMarks * 3)) * 100;
-        return avg;
-    }
-    //This code won't compile because avg is inaccessible outside te method  getAverage
-//    public void setAverage(double val) {
-//        avg = val;
-//    }
-
 }
+
+
+
